@@ -1,0 +1,1 @@
+đây là docs mô tả cho design pattern tổng quát

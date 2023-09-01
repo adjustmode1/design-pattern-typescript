@@ -1,0 +1,1 @@
+đây là lý thuyết về singleton design pattern
