@@ -1,3 +1,6 @@
+# build folder
+dict
+
 .env
 .env-development
 .env-production
