@@ -9,8 +9,8 @@ class Main {
         this.logger = new Logger('Main');
     }
 
-    static getInstance() {
-        if(!this.instance){
+    static getInstance() { 
+        if(!Main.instance){
             Main.instance = new Main();
         }
 
