@@ -2,10 +2,19 @@ import { Logger } from './utils';
 import { Singleton } from './creational/singleton';
 
 class Main {
+    private static instance: Main;
     private logger;
 
-    constructor(){
+    private constructor(){
         this.logger = new Logger('Main');
+    }
+
+    static getInstance() {
+        if(!this.instance){
+            Main.instance = new Main();
+        }
+
+        return Main.instance;
     }
 
     helloWorld(){
@@ -26,6 +35,6 @@ class Main {
     }
 }
 
-const main = new Main();
+const main = Main.getInstance();
 
 main.testSigleton();
