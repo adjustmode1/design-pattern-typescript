@@ -22,7 +22,7 @@
 - Singleton yêu cầu xử lý đặc biệt trong mộ trường đa luồng, để nhiều luồng không tạo ra một đối tượng Singleton nhiều lần.
 - Singleton tạo ra quá nhiều phụ thuộc, không thể sử dụng đa hình và dễ tạo ra các bug.
 
-# triển khai:
+# Triển khai:
 - Định nghĩa thuộc tính static riêng tư trong class “single instance”
 - Định nghĩa hàm static công khai trong một class
 - Thực hiện “Lazy initialization” cho lần sử dụng đầu tiên trong hàm cần truy cập.
